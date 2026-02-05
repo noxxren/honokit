@@ -1,0 +1,34 @@
+{
+  "name": "honokit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Production-ready Google Auth boilerplate with Bun, Hono, React, and TypeScript",
+  "author": "noxren",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter \"*\" dev",
+    "dev:server": "bun run --filter @honokit/server dev",
+    "dev:client": "bun run --filter @honokit/client dev",
+    "build": "bun run --filter \"*\" build",
+    "build:server": "bun run --filter @honokit/server build",
+    "build:client": "bun run --filter @honokit/client build",
+    "test": "bun test",
+    "test:server": "bun run --filter @honokit/server test",
+    "test:client": "bun run --filter @honokit/client test",
+    "lint": "bun run --filter \"*\" lint",
+    "format": "prettier --write \"**/*.{js,ts,tsx,jsx,json,md}\"",
+    "typecheck": "bun run --filter \"*\" typecheck",
+    "db:migrate": "bun run --filter @honokit/database migrate",
+    "db:seed": "bun run --filter @honokit/database seed"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.2.4",
+    "shadcn": "^3.8.2",
+    "typescript": "^5.3.3"
+  }
+}

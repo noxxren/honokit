@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__obsidian__obsidian_list_files_in_vault",
+      "mcp__obsidian__obsidian_append_content",
+      "WebSearch",
+      "WebFetch(domain:code.claude.com)",
+      "Bash(docker:*)",
+      "Bash(claude mcp add --transport stdio context7 -- cmd /c docker run -i --rm mcp/context7)",
+      "Bash(claude mcp list)",
+      "Bash(claude mcp remove:*)",
+      "Bash(claude mcp add:*)",
+      "WebFetch(domain:hub.docker.com)",
+      "WebFetch(domain:context7.com)",
+      "mcp__obsidian__obsidian_patch_content",
+      "mcp__obsidian__obsidian_get_file_contents",
+      "mcp__obsidian__obsidian_list_files_in_dir",
+      "Bash(mkdir:*)",
+      "Bash(tree:*)",
+      "Bash(find:*)",
+      "Bash(git mv:*)",
+      "Bash(mv:*)",
+      "Bash(bun install:*)",
+      "Bash(bun run dev:*)",
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(bunx:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
