@@ -1,6 +1,15 @@
 // Shared TypeScript types across frontend and backend
 
 /**
+ * Example types
+ */
+export interface AuthUser {
+  id: string;
+  email: string;
+  name: string;
+}
+
+/**
  * User roles in the application
  */
 export type UserRole = 'user' | 'admin'
