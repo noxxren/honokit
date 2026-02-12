@@ -13,7 +13,7 @@ Hono middleware functions for request/response processing.
 
 ```typescript
 import { Hono } from 'hono'
-import { auth } from './middleware/auth'
+import { auth } from './middlewares/auth'
 
 const app = new Hono()
 
